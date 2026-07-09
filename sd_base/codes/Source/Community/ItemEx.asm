@@ -3350,7 +3350,7 @@ CODE @ $809622d8    # stOperatorInfoTraining::processBegin
 
 ## TODO: Masterball selection in Pokemon switch
 
-.include Source/Community/DoubleCherry.asm
+#.include Source/Community/DoubleCherry.asm
 
 #######################################################################################
 Dragoon Parts Drops like a Normal Item With Multiplier If Parts Have Dropped [Kapedani] 

@@ -1,3 +1,7 @@
+# Fork of Stracciatella Brawl Base to restore Pokémon Trainer
+
+Original Readme.md follows...
+
 # Stracciatella Brawl Base
 An example repository for starting to mod Super Smash Brothers Brawl
 

@@ -146,7 +146,7 @@ op addi r5,r29,0x4cfa	@ $80079f98
 	## Once modern asyncrhonous RSP loading is integrated into REX, then we can do away with this tumor code and relocate the CSS rules menu to the MenuResource heap, which will be significantly freed up due to RSP loading.
 	
 ######################################
-Reduce FighterEffect Heap [Exul Anima]
+!Reduce FighterEffect Heap [Exul Anima]
 ######################################
 
 word 0x00001000 @ $80421B04		# \

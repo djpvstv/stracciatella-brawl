@@ -2,10 +2,10 @@
 [Project+] Solo Pokemon Trainer Pokemon (other PT Pokemon recognize independence) [DukeItOut, Eon]
 ##################################################################################################
 byte 0x6C @ $8082C5DB	# Force Pokemon to be treated normally
-op b 0x194 @ $8084C768	# Do not load FitPokeTrainerEff.pac!
+#op b 0x194 @ $8084C768	# Do not load FitPokeTrainerEff.pac!
 
 ################################################
-Independent Pokemon for Subspace [Eon, Kapedani]
+!Independent Pokemon for Subspace [Eon, Kapedani]
 ################################################
 HOOK @ $800af80c
 {

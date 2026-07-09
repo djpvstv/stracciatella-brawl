@@ -2669,7 +2669,7 @@ orig:
 op nop @ $80A8BDAC
 
 ####################################################################
-PT Pokemon Have Final Smashes & FS Characters Don't v1.1 [ds22, Eon]
+!PT Pokemon Have Final Smashes & FS Characters Don't v1.1 [ds22, Eon]
 ####################################################################
 #minor edit to remove random change in register use and tidy up a little
 
@@ -2695,7 +2695,7 @@ HOOK @ $8081DF6C
 }
 
 #######################################################
-Independent Pokemon Engine HTP, Classic & MMS [ds22]
+!Independent Pokemon Engine HTP, Classic & MMS [ds22]
 #######################################################
 * C26DDDF4 00000006
 * 2C03001D 40A20008
@@ -2720,14 +2720,14 @@ Independent Pokemon Engine HTP, Classic & MMS [ds22]
 * 60000000 00000000
 
 #######################################################################
-Independent Pokemon Save Data Engine + no wreck My Music v2 [spunit262]
+!Independent Pokemon Save Data Engine + no wreck My Music v2 [spunit262]
 #######################################################################
 * 06407BD0 0000000E
 * 04030F0D 1E1B1F1B
 * 201B211B 221B0000
 
 #####################
-Unload PT Data [ds22]
+!Unload PT Data [ds22]
 #####################
 word[24] 0x1D, 0x1E, 0x1F, 0x1C, 0x1D, -1, -1, -1, |
          0x1E, 0x1F, 0x1D, 0x1C, 0x1E, -1, -1, -1, |
