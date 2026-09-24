@@ -1,0 +1,324 @@
+Source/P+Ex/Hooktype.asm
+	VBI -> AXNextFrame During Boot v1.0 [Sammi-Husky] @ Off 0x8
+Source/Rex/USBGecko.asm
+	Codes Sent with USB Gecko Append Existing Codeset v2.2 [Magus] @ Off 0x80
+	OSREPORT Debug Logs Over USB Gecko [bushing, Exul Anima] @ Off 0xc8
+Source/Rex/RAM-EX.asm
+	Disable and Unload HOME Menu Everywhere [Exul Anima] @ Off 0x1a0
+	Snapshots & Classic/All-Star Mode Results Stills Optimized Completely Out Of Network Heap [Exul Anima] @ Off 0x1c8
+	Costume Decompression Now In FighterXResource Heaps [Exul Anima] @ Off 0x4c8
+	Destroy Network Heap [Exul Anima] @ Off 0x5f0
+Source/Project+/MemoryLayout.asm
+	Memory Extension for FighterXResource1 [Dantarion, ASF1nk, DukeItOut, Exul Anima] @ Off 0x620
+	Memory Extension for FighterXResource2 [Dantarion, Exul Anima] @ Off 0x660
+	StageResource In 'scVsResult' Now Same Size As In 'scMelee' In VS Mode & Derivatives [Exul Anima] @ Off 0x6a0
+	MeleeFont Resource 0.45MB -> 0.33MB [Exul Anima] @ Off 0x6a8
+	Sound Resource 12.76MB -> 12.76MB [DukeItOut, Exul Anima] @ Off 0x6b0
+	Sound Resource sndHeap[0] 2.91MB -> 4.41MB [MarioDox] @ Off 0x740
+	Reduce FighterEffect Heap [Exul Anima] @ Off 0x758
+AXNextFrame -> VBI Hook Switch After Strap Screen v1.1 [Magus, Sammi-Husky] @ Off 0x770
+BA and BLA are usable instructions v1.3 [Eon, taukhan] @ Off 0x7e0
+Reset multipac stage lock status between Classic & All-Star matches [wiiztec] @ Off 0x830
+Stock/Frame Control not disabled in 300% Mode 1.1 [wiiztec] @ Off 0x850
+Special Mode flags clear [wiiztec] @ Off 0x860
+Reflect is Bunny 1.1d [wiiztec] @ Off 0x880
+Explodey Items Use Normal Item Limit [Kapedani] @ Off 0x8d0
+Party Balls Use Normal Item Limit [Kapedani] @ Off 0x8d8
+Bunny Hoods Use Normal Item Limit [Kapedani] @ Off 0x8e0
+mtRandrandi behaves as mtRand->randi(max) [Kapedani]  @ Off 0x8e8
+Ragequit Accelerator [InternetExplorer] @ Off 0x980
+Sudden Death Port Fix (Requires Analog C-Stick, L R, & Light-Shield Button Stored as Variables v2.1) [ds22] @ Off 0x988
+1 Player Matches in Time Mode only [InternetExplorer] @ Off 0x9a0
+1 Team Matches [spunit262] @ Off 0x9e8
+Online Handicap Disable [spunit262] @ Off 0x9f0
+Training Room Item Fix [ds22] @ Off 0x9f8
+Infinite Replays @ Off 0xa00
+Allow Pausing When Set to Off v3 [standardtoaster] @ Off 0xa18
+Match Loss Clears Pause Address [standardtoaster] @ Off 0xa48
+Match Win Clears Pause Address [standardtoaster] @ Off 0xa68
+Pause Set to Off -> Hold Start to Pause v3 [standardtoaster, DukeItOut] @ Off 0xa88
+Allow 2x Speed Setting in Training [Magus] @ Off 0xaf0
+Unrestricted Pause Camera @ Off 0xb20
+Unrestricted Replay Camera @ Off 0xb30
+[Legacy TE] Disable Challenger Approaches [ds22] @ Off 0xb60
+[Legacy TE] CPUs can attack each other in Training Mode [Fracture] @ Off 0xb68
+[Legacy TE] Set the number of CPUs to 0 in Training Mode [Sarrg] @ Off 0xb80
+[Legacy TE] Target Smash levels fix [DukeItOut] @ Off 0xb90
+[Legacy TE] Always use PACs instead of PCS files [DukeItOut] @ Off 0xbb8
+[Legacy TE] Display Stack Trace, Instruction, and Address Upon Crashing [UnclePunch, Fracture] (internal crash fix by Eon) @ Off 0xbc0
+Source/P+Ex/EffectsEX.asm
+	Effect.pac Roster Expansion System (RSBE.Ver) V3 (Costume-Specific Etc File Support) [JOJI, DukeItOut, QuickLava] @ Off 0xcc8
+Sword Trail Hitlag fix [MarioDox] @ Off 0xf78
+Bone Visibility Stabilizer [DukeItOut] @ Off 0xf80
+[Project+] Turbo item does not fire curry shots in any mode [DukeItOut] @ Off 0xfb0
+[Project+] Item Frequency None if all items turned off and Items spoofed off if item frequency None  [Eon] @ Off 0xfb8
+Subspace uses same Internal Constants as Versus [Eon] @ Off 0x1020
+Preloaded Texture memory leak band-aid [Eon] @ Off 0x1028
+Source/ProjectM/CloneEngine.asm
+	Clone Engine Data Saving Fix [ds22] @ Off 0x1078
+	Clone Engine Corps Stock Fix + BrawlEX Corps Fix v1 + Exception Macro [ds22, Desi] @ Off 0x10b8
+	Mewtwo Fixes [Dantarion, ds22] @ Off 0x1108
+	Lucario Clone Aura Sphere GFX Fix [Dantarion, ds22, DesiacX] @ Off 0x11b8
+	Kirby Lucario Clone Aura Sphere GFX Fix [ds22, DesiacX, Eon] @ Off 0x11e8
+	Lucario Clone Aura Sphere Bone ID Fix [Dantarion, ds22, PyotrLuzhin, Yohan1044, KingJigglypuff, Desi] @ Off 0x1238
+	Knuckles Fixes @ Off 0x1360
+	Lyn Fixes [ds22] @ Off 0x1390
+	Samus Clone Charge Shot GFX Fix [Eon, KingJigglypuff] @ Off 0x13a0
+	Kirby Samus Clone Charge Shot GFX Fix [ds22, DesiacX, Eon, KingJigglypuff] @ Off 0x13f8
+	Fox Clone Blaster Bullet GFX Fix [djpvstv] @ Off 0x1450
+	Jigglypuff Clone Rollout Bone Fix [codes, DesiacX] @ Off 0x1478
+	Jigglypuff Clone Rollout Max Charge GFX Fix [Codes, DesiacX] @ Off 0x1998
+	Jigglypuff Clone Rollout SFX Fix [codes, DesiacX] @ Off 0x1a58
+	Dedede Clones Fix [MarioDox] @ Off 0x1b28
+	Bowser Clone Fire Breath Bone Fix [KingJigglypuff] @ Off 0x1be8
+	Link Final Smash Clone Pos Fix [DukeItOut] @ Off 0x1c10
+	Clone Engine Clear Final Smash Fix [DukeItOut] @ Off 0x1c18
+	source/P+Ex/KirbyHatEx.asm
+		Weapon Data Fix Automatic [ds22, Desi, Kapedani] @ Off 0x1c30
+		Kirby Copy Ability ID Conversion [Kapedani] @ Off 0x1e00
+		Kirby Hats EX Shadow Fix [Desi] @ Off 0x1e50
+		EX Hat DESTROY Fix [Desi] @ Off 0x1f80
+	Classic and All-Star Ending Choice Engine v1.1d [DukeItOut] @ Off 0x1f88
+	Clone Classic & All-Star Result Data V1.21 [ds22, Dantarion, DukeItOut] @ Off 0x2190
+	BrawlEx Classic/All-Star Cosmetic ID Fix [KingJigglypuff] @ Off 0x22f0
+	BrawlEx ftSlotManager Id Arrays [Kapedani] @ Off 0x22f8
+Source/CodeMenu/CodeMenu.asm
+	[CM Code Menu] FPS Code [UnclePunch] @ Off 0x24a8
+	[CM Code Menu] Print Code Menu @ Off 0x2500
+	[CM Code Menu] Control Code Menu @ Off 0x2a58
+	[CM Code Menu] Stop Announcer @ Off 0x3a98
+	[CM Code Menu] Endless Friendlies @ Off 0x3ac0
+	[CM DrawDI] Set Hit Start @ Off 0x3bd0
+	[CM DrawDI] Add to SDI Buffer @ Off 0x3d50
+	[CM DrawDI] Add To ASDI Buffer @ Off 0x3e30
+	[CM DrawDI] Set Trajectory Buffers @ Off 0x3f48
+	[CM Code Menu] Constant Overrides + Run PSCC Color Update Callbacks @ Off 0x41f0
+	[CM DBZMode] DBZ Mode @ Off 0x42f8
+	[CM DBZMode] Force Death Off Top @ Off 0x4408
+	[CM Code Menu] Alt Stage Behavior @ Off 0x4488
+	[CM Code Menu] Crowd Cheer Toggle @ Off 0x45a0
+	[CM Code Menu] Staling Toggle @ Off 0x4620
+	[CM Control Codes] Save Rotation Queue For Replay @ Off 0x4658
+	[CM Control Codes] Start Match @ Off 0x46a8
+	[CM Control Codes] Order Rotation Queue By Match Placing @ Off 0x4918
+	[CM Control Codes] End Match @ Off 0x4b90
+	[CM Control Codes] Draw @ Off 0x5098
+	[CM Control Codes] Load Code Menu @ Off 0x5340
+	[CM Control Codes] Update Heap Address Cache @ Off 0x5428
+	[CM Control Codes] Add New Character Buffer @ Off 0x5460
+	[CM Control Codes] Delete Character Buffer @ Off 0x5860
+	[CM Control Codes] Delete Character Buffer on Transform @ Off 0x5940
+	[CM _UtilitySubroutines v1.1.0]  [QuickLava] @ Off 0x5a40
+	Unattested Code 0 @ Off 0x5b58
+	[CM Tag Based Costumes] recordActiveTags @ Off 0x5b70
+	[CM Tag Based Costumes] setTagCostume @ Off 0x5be0
+	[CM Tag Based Costumes] reloadCostumeAfterTagSelect @ Off 0x5df8
+	[CM Tag Based Costumes] updateTagsWhenOptionChanged @ Off 0x5e48
+	[CM _PlayerSlotColorChangers v3.1.3] Incr and Decr Slot Color with L/R, Reset with Z on Player Kind Button [QuickLava] @ Off 0x5ed8
+	[CM _PlayerSlotColorChangers v3.1.3] Results Screen Player Names are Transparent [QuickLava] @ Off 0x6020
+	[CM _PlayerSlotColorChangers v3.1.3] CSS Player Names are Transparent [QuickLava] @ Off 0x6070
+	[CM _PlayerSlotColorChangers v3.1.3] Cache SelChar Team Battle Status [QuickLava] @ Off 0x6088
+	[CM _PlayerSlotColorChangers v3.1.3] Cache In-game Mode Team Battle Status [QuickLava] @ Off 0x60a8
+	[CM _PlayerSlotColorChangers v3.1.3] Only 2P Stadium Boss Battles Are Considered Team Battles [QuickLava] @ Off 0x60c8
+	[CM _PlayerSlotColorChangers v3.1.3] Disable Franchise Icon Color 10-Frame Offset in Results Screen [QuickLava] @ Off 0x60e0
+	[CM _PlayerSlotColorChangers v3.1.3] Hand Color Fix [QuickLava] @ Off 0x60f0
+	[CM _PlayerSlotColorChangers v3.1.3] Re-Enable Material Recalc on Certain In-Game Elements [QuickLava] @ Off 0x60f8
+	[CM _PlayerSlotColorChangers v3.1.3] Color Choice Resets on Controller Disconnect [QuickLava] @ Off 0x6100
+	[CM _PlayerSlotColorChangers v3.1.3] Port-Specific Stocks Set CLR0 Frame [QuickLava] @ Off 0x6130
+	[CM _PlayerSlotColorChangers v3.1.3] CSS Random Always Uses P1 CSP [QuickLava] @ Off 0x6138
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (setCharKind) [QuickLava] @ Off 0x6150
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (incTeamColor) [QuickLava] @ Off 0x61b0
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (decTeamColor) [QuickLava] @ Off 0x61e0
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (setPlayerKind) [QuickLava] @ Off 0x61f8
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (updateMeleeKind) [QuickLava] @ Off 0x6210
+	[CM _PlayerSlotColorChangers v3.1.3] Random Franchise Icon uses Unique CLR0 Frame (NOP Writes) [QuickLava] @ Off 0x6228
+	[CM _PlayerSlotColorChangers v3.1.3] SSS Random Stocks Use CLR0 Coloring [QuickLava] @ Off 0x6258
+	[CM _PlayerSlotColorChangers v3.1.3] Bootleg CLR0 v4 Support Patch [QuickLava] @ Off 0x62b0
+	[CM _PlayerSlotColorChangers v3.1.3] Embed Color and Scheme Tables [QuickLava] @ Off 0x62e8
+	[CM _PlayerSlotColorChangers v3.1.3] Embed Color Callback Table [QuickLava] @ Off 0x63c8
+	[CM _PlayerSlotColorChangers v3.1.3] RGB Strobe Callback [QuickLava] @ Off 0x6408
+	[CM _PlayerSlotColorChangers v3.1.3] Borrow Stack Space [QuickLava] @ Off 0x6448
+	[CM _PlayerSlotColorChangers v3.1.3] Prep Code [QuickLava] @ Off 0x6460
+	[CM _PlayerSlotColorChangers v3.1.3] Main Code [QuickLava] @ Off 0x6520
+	[CM _DashAttackItemGrab] vBrawl Item Grab Restoration Toggle v1.0.0 [QuickLava] @ Off 0x66e8
+	[CM _JumpsquatOverride] Jumpsquat Length Modifier @ Off 0x6770
+Source/Project+/CompressPAC.asm
+	Costume PAC files can be compressed V3 [DukeItOut] @ Off 0x6808
+	Character Costumes are decompressed in the Network Heap [Kapedani, DukeItOut] @ Off 0x6858
+	Bowser and Giga Bowser Can Be Compressed [DukeItOut] @ Off 0x6880
+	Only New Characters Need a Spy Costume Added [DukeItOut] @ Off 0x68c8
+Source/Project+/FilePatchCode.asm
+	File Patch Code REDUX v0.95 [Sammi Husky] @ Off 0x68d0
+	Source/P+Ex/ReplacementSoundbankEngine.asm
+		[Project+] RSBE v1.51 (/Project+/pf/sfx, can load soundbank clones for stages and items) (requires CSSLE) [InternetExplorer, DukeItOut, QuickLava, Kapedani, Squidgy] @ Off 0x7230
+	SDHC/SDXC Extension 2.0 [Bero, Exul Anima] @ Off 0x7888
+	checkModSDFile [DukeItOut]  @ Off 0x7aa8
+	Store Heap Level for Common Sawnds [Sammi Husky, Kapedani] @ Off 0x7b38
+	Don't get sound data if sound doesn't exist [MarioDox] @ Off 0x7bc8
+Source/P+Ex/WaveIDIntercept.asm
+	Override RWSD WAVE ID via Info Index v1.8.0 [QuickLava] @ Off 0x7bf8
+Source/Project+/Memory.asm
+	LA Variables Expansion and Additional Info System [Magus, DukeItOut] @ Off 0x7d40
+	Character ID Fix 2.4 [spunit262, The Paprika Killer, DukeItOut] @ Off 0x7e18
+	TopN Y Used as SCD Bottom in Air for 10 Frames (Memory leak fix, requires above Additional Info System code) v3.5 [Magus, DukeItOut] @ Off 0x7e48
+	Ground Stabilization Fix [DukeItOut] @ Off 0x7f78
+	TopN Y and SCD Bottom Reference Fix v2.1 [Magus, Eon]  @ Off 0x7fc8
+	Stage Collisions Update TopN Y [Magus] @ Off 0x8028
+Bit Variables Beyond 255 and Negative Offset Variables [Magus] @ Off 0x80e0
+Multiply Frame Speed Modifier Command [Magus] @ Off 0x8318
+Reset Variables on Action Changes & RCO Lag Fix v2 [standardtoaster, ds22, Magus, DukeItOut, Eon] @ Off 0x8338
+Shield Break Minimum Disabled Time Fix [Magus] @ Off 0x8440
+Powershield Reflect Sets Variable [Magus] @ Off 0x8460
+Dream Land Wind Uses TopN-X for Collision Detection [Magus] @ Off 0x84d0
+KO Ownership Timer doesn't Trigger on Certain Actions [Magus] @ Off 0x8538
+Triple Jump Glitch Fix [Phantom Wings, spunit262] @ Off 0x8570
+[Project+] Left-Facing Crawl Momentum Fix [Sammi Husky] @ Off 0x8578
+Don't drop fighter generated items when hit [Kapedani] @ Off 0x8580
+[Project+] Disable Screen-KOs in teams [ds22, Eon] @ Off 0x8610
+[Project+] Customizable Attacker Hitlag Modifier [DukeItOut] @ Off 0x8670
+Defender Electric Hitlag disabled by 2.0x trip chance [Eon] @ Off 0x86e8
+Knockback during Timer Slo-mo is also slowed down v2.0 [Eon] @ Off 0x8710
+Slow-mo timer Continues even when Linked [Eon] @ Off 0x8790
+[Project+] Floating Point Imprecision compensation for Collision tests v1.1 [Eon] @ Off 0x87c8
+[Project+] Faux Super Armour Port Priority Fix v1.1 [Eon] @ Off 0x87d0
+[Project+] Moving Platform Landing Fixes [Eon] @ Off 0x8838
+Expand Classic mode horde battle costume array [Eon] @ Off 0x8898
+Spring Props don't set X position [DukeitOut] @ Off 0x88d8
+Change Subaction Pass Frame also Passes FSM v 1.1 [Eon] @ Off 0x88f8
+adjustCeil uses correct offset calculation [Eon] @ Off 0x8930
+changeMaterialTex returns if getResTex returned a null pointer [Eon] @ Off 0x8938
+Source/ProjectM/Modifier/Physics.asm
+	Custom Physics Engine (Actions, Subactions FastFall) V1.3a [Magus, Almas, DukeItOut] @ Off 0x8960
+	Custom Physics Engine (Subactions Other) v1.2 [Magus, Almas] @ Off 0x8a28
+	Custom Physics Data @ Off 0x8d50
+Source/ProjectM/Modifier/VariableSet.asm
+	Variable Set on Air/Ground State Change Engine v1.2b [Magus, DukeItOut] @ Off 0x8d88
+Controller Input Lag Fix [Magus] @ Off 0x9040
+Tags in replays [Y.S] @ Off 0x9058
+Timer Always Displays 6th Digit [ds22] @ Off 0x9060
+Lagless Character Selection [Magus] @ Off 0x9068
+Menu Camera Rotation Modifier [Magus] @ Off 0x9070
+Menu Scroll Speeds Modifier [Magus] @ Off 0x9078
+Name Scroll Transition Modifier [Magus] @ Off 0x9088
+Faster Name Scrolling with Shoulder Buttons v1.2 [wiiztec, Magus] @ Off 0x90a8
+Reverse Name Sort [Dantarion] @ Off 0x9138
+Reset Tag when Unplugged [standardtoaster] @ Off 0x9140
+Japanese character support in name maker [Dantarion, standardtoaster] @ Off 0x9158
+Allow disabled names [standardtoaster] @ Off 0x9190
+Existing Tag Usage [standardtoaster] @ Off 0x91a0
+CSS Cursor Speed [Dantarion] @ Off 0x91a8
+Use Custom CLR ID on Anchored GFX [Magus] @ Off 0x91b0
+[Legacy TE] Team Glow CSS Toggle [PyotrLuzhin, Fracture, Yohan1044] (edited to be only team glow by MarioDox) @ Off 0x91d0
+[Legacy TE] CSS keeps character choice for inactive ports between matches [Fracture] @ Off 0x9290
+Melee Random Rewrite (CSS Expansion) [Sammi Husky, Eon] @ Off 0x9358
+[Legacy TE] sc_selmap.pac can be 3 times larger because I said so V2 [DukeItOut] @ Off 0x9448
+[Legacy TE] Hold L/R to inc/dec 1/4 of a character's costume count on the CSS [DukeItOut] @ Off 0x9490
+[Project+] Timer Displays frames instead of centiseconds [Eon] @ Off 0x9558
+Source/ProjectM/CSS.asm
+	CSS Selections Preserved in VS Mode [Magus] @ Off 0x9580
+	CSS Record Display Fix [ds22] @ Off 0x9588
+	Pick Any Color You Want Fix.Ver (RSBE.Ver) [original by Igglyboo , Fixed by JOJI] @ Off 0x95a8
+	Don't load fighter files on CSS [MarioDox] @ Off 0x95c8
+Source/ProjectM/SSSButtons.asm
+	L+R+A during Stage Select goes to CSS V2 (GC & CC) [ds22, Magus] @ Off 0x9630
+Source/P+Ex/HiddenAltSets.asm
+	[Legacy TE] Restrict Special Character Selection to L 1.1 [PyotrLuzhin, Yohan1044, DukeItOut] @ Off 0x9690
+	AltR/Z EX Fix 242 Variant [Desi, RedipsTheCooler] @ Off 0x96b0
+	Hidden Alt Costume Sets Rework v1.1.5 [QuickLava] @ Off 0x96c8
+	Holding X/Y Automatically Scrolls Through Costumes [Exul Anima] @ Off 0x9c80
+Source/LegacyTE/Masquerade.asm
+	[Legacy TE] Masquerade Costume Flags V2 [ds22, DukeItOut] @ Off 0x9d80
+	Individual Costume Final Smash Works for All Costume IDs [Kapedani] @ Off 0x9d90
+	[Legacy TE] Set Masquerade Costume Count to Zero to have up to 50 costumes v1.1a [DukeItOut] @ Off 0x9d98
+	[Brawl-Themed P+] Stage Select Screen Supports 50CC [QuickLava] @ Off 0x9f10
+Source/LegacyTE/TagsControls.asm
+	[Legacy TE] Holding L when new name at CSS goes to custom controls & back to CSS v1.21 [ChaseMcDizzle] @ Off 0x9f70
+	[Project+] X To toggle Rumble V1.3 (requires Fracture's Controls) [ChaseMcDizzle, Fracture, Yohan1044, DukeItOut] @ Off 0xa070
+	[Project+] CSS Tags with Rumble are Coloured [Eon]  @ Off 0xa230
+	[Legacy TE] Load Player Tags on Win Screen v2 [PyotrLuzhin] @ Off 0xa330
+Source/LegacyTE/CSSCustomControls.asm
+	CSS Custom Controls V2.0 [Fracture, DukeItOut] @ Off 0xa390
+Team Coloured Shields V2 [ds22] @ Off 0xafd8
+Team Colour Shade Check Fix (BrawlEx) [ds22, Sammi Husky] @ Off 0xb000
+Team Colour Shade Modifier [ds22] @ Off 0xb050
+Phantom Hit SFX & GFX Modifier [ds22] @ Off 0xb068
+Wall Jump GFX Modifier [ds22] @ Off 0xb078
+SFX Survival -> Choose Your Character [Standardtoaster] @ Off 0xb080
+Random has Announcer Call [standardtoaster] @ Off 0xb090
+SFX Fade Fix PMEXv0.5 [ds22, PyotrLuzhin] @ Off 0xb0c0
+On-hit SFX Modifier [ds22] @ Off 0xb0e8
+All Music Available without Unlocking [Magus] @ Off 0xb100
+Locked Stage Music Fix [Magus] @ Off 0xb108
+Source/Project+/CSE.asm
+	[Project+] Custom Sound Engine v4.2b [Dantarion, PyotrLuzhin, DukeItOut] @ Off 0xb110
+Source/Project+/ResultsMusic.asm
+	Classic and All-Star Results Music Table [DukeItOut] @ Off 0xb7d8
+Source/Project+/SFXExpand.asm
+	SFX and Music Setting Customizer [DukeItOut] @ Off 0xb950
+	[Project+] SoundBank Expansion System (RSBE.Ver) v3.1 [codes, DukeItOut, JOJI, Squidgy] @ Off 0xbb28
+	Hitbox Sound Effect Change System v2.1 [Eon] @ Off 0xc618
+	[Project+] Expansion sawnd characters are mute while metal V2 [DukeItOut] @ Off 0xc7b0
+Cape Reversed Control Time [standardtoaster] @ Off 0xc840
+[Legacy TE] Peach costumes no longer use a FitEntry [DukeItOut] @ Off 0xc848
+Source/Project+/YoshiEggs.asm
+	Yoshi Eggs are Costume Based v1.2β [ds22]  @ Off 0xc850
+	[Project+] Yoshi's eggshell particles are Colored 1.1 [DukeItOut] @ Off 0xc8b8
+	[Project+] Yoshi's Egg break out intang 14 > 9 [Fracture] @ Off 0xc998
+	Yoshi Eggs don't despawn when Yoshi dies [Eon] @ Off 0xc9a0
+	[Project+] Egged Damage Multiplier (0.5x -> 0.75x) [DukeItOut] @ Off 0xc9a8
+PT Pokemon Have Final Smashes & FS Characters Don't v1.1 [ds22, Eon] @ Off 0xc9b0
+Independent Pokemon Engine HTP, Classic & MMS [ds22] @ Off 0xca10
+Independent Pokemon Save Data Engine + no wreck My Music v2 [spunit262] @ Off 0xca80
+Unload PT Data [ds22] @ Off 0xca98
+[Project+] Lucario Charge Glow Fix [Eon] @ Off 0xcb00
+ZSS Jumbo Screen Name Fix [ds22] @ Off 0xcb10
+[Project+] Roy Counter Fix [ds22]  @ Off 0xcb20
+[Project+] Sonic/Knuckles Spin Dash Bucket Brake Fix [Eon] @ Off 0xcb40
+Alloys Can Shield, Dodge & Grab Ledges [ds22] @ Off 0xcb48
+Source/LegacyTE/CPU.asm
+Source/ProjectM/ButtonPresses.asm
+	[Project+] Independent Button Presses v3 [Magus, Eon, DukeItOut] @ Off 0xcb60
+	Gamecube Controller Light LR Button Presses when not Set to Shield [Dantarion, Magus] @ Off 0xcd10
+	Classic Controller Light LR Button Presses when not Set to Shield [Magus] @ Off 0xcd80
+	Analog C-Stick, L R, & Light-Shield Button Stored as Variables v2.8 [Magus, DukeItOut] @ Off 0xce00
+	Tap Jump Requirement Checks for C-Stick not Pressed [Magus] @ Off 0xd190
+	Platform Drop C-Stick Aerial Fastfalling [Magus] @ Off 0xd1c8
+	C-Stick Set to Attack or Special Doesn't Also Input Jump [Magus] @ Off 0xd208
+	Up-B, Any Taunt, and Tap Jump Button Timers (tap-jump window fixed 0.715 -> 0.7) [Magus, Eon] @ Off 0xd218
+	Jump & Shield Timers Don't Reset on Button Clear [Magus] @ Off 0xd2f0
+Source/Project+/CStick.asm
+	C-stick Smash Fixes + functional tilt stick (reverse ftilt included) v1.2 [camelot, Eon] @ Off 0xd2f8
+	[Project+] C-Stick Debug Mode and Slow Mode fix v4.3 [Fracture, DukeItOut, Eon] @ Off 0xd598
+	[Project+] Custom C-stick options [Eon] @ Off 0xd670
+	[Project+] C-stick mushing Fix [Eon] @ Off 0xd740
+	[Project+] C-Stick throws 2.0 [Eon, Dantarion, standardtoaster] @ Off 0xd748
+	Cstick Neutral range = Cstick input range [Eon] @ Off 0xd900
+	C-Stick backwards fsmash bug fix [Eon] @ Off 0xd908
+Source/Project+/Items.asm
+	Effects spawn on hitting items [DukeItOut] @ Off 0xd920
+	Max Items Spawnable 8 -> 12 [DukeItOut] @ Off 0xd930
+	Additional Item Switch Frequency Settings 'VERY HIGH', 'INTENSE', and 'BOMB RAIN' [DukeItOut] @ Off 0xd950
+Source/P+Ex/Heritage.asm
+	Access Fighter Ancestor [DukeItOut] @ Off 0xda68
+Source/Community/ItemEx.asm
+	ItemEx Clone Engine v2.52 [Sammi Husky, Kapedani] @ Off 0xdb20
+	Source/Community/DoubleCherry.asm
+		Cherry Double v1.2 [Kapedani] @ Off 0x11178
+	Dragoon Parts Drops like a Normal Item With Multiplier If Parts Have Dropped [Kapedani]  @ Off 0x11ea8
+	Team Healer Always Heals Teammates [Kapedani] @ Off 0x11f18
+	Touch Items Notify Outside Event Get Item [Kapedani] @ Off 0x11fa8
+	Every Item Can Have Collision v2 [Kapedani] @ Off 0x11fe8
+	Every Item Can Have Physics [Kapedani] @ Off 0x12010
+	Item Mayhem Mode (Item Switch Edition) + Butterfingers [MarioDox, DukeItOut, Kapedani] @ Off 0x12018
+	Passive Aggressive Mode [Kapedani] @ Off 0x12178
+	All Assists are Unlocked [Kapedani] @ Off 0x125c0
+	ItemEx Mayhem and Passive Aggression Modes default to Off on Boot [Kapedani] @ Off 0x125d0
+	utArchivereqLoad 4th Parameter as 2 forces read instead of clone [DukeItOut, Kapedani] @ Off 0x12608
+Source/Community/Syringe.asm
+	Reduce InfoInstance in SSE v2 [Sammi Husky, Kapedani] @ Off 0x12630
+	Don't clear memory on game launch [Sammi Husky] @ Off 0x12640
+	run codehandler after initializing memory [Sammi Husky] @ Off 0x12650
+	run codehandler after loading rels [Sammi Husky] @ Off 0x12680
+	Syringe Core Loader [Sammi Husky, Exul Anima] @ Off 0x126c0
+Source/Project+/MultiGCT.asm
+	Expansion GCT Available [DukeItOut] @ Off 0x12838

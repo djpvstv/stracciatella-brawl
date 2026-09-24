@@ -1,8 +1,8 @@
 # Path to GCTRealMate
-$gctPath = ".\sd_base\codes\GCTRealMate.exe"
-$enterFile = ".\sd_base\codes\enter.txt"
-$sourceInjectDir = ".\sd_base\codes\Source\Community\Injects"
-$destInjectDir   = ".\sd_base\private\wii\app\rsbe\pf\injects"
+$gctPath = ".\sd_base\sBrawl\GCTRealMate.exe"
+$enterFile = ".\sd_base\sBrawl\enter.txt"
+$sourceInjectDir = ".\sd_base\sBrawl\Source\Community\Injects"
+$destInjectDir   = ".\sd_base\sBrawl\pf\injects"
 
 # Check if GCTRealMate exists
 if (-not (Test-Path $gctPath)) {
@@ -17,16 +17,16 @@ if (-not (Test-Path $destInjectDir)) {
 
 Write-Host "`n###################################################################################################`n"
 Write-Host "`n`nCreating codes for RSBE01`n"
-Start-Process -FilePath $gctPath ".\sd_base\codes\RSBE01.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
+Start-Process -FilePath $gctPath ".\sd_base\sBrawl\RSBE01.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
 Write-Host "`n###################################################################################################`n"
 Write-Host "`n`nCreating codes for NETPLAY`n"
-Start-Process -FilePath $gctPath ".\sd_base\codes\NETPLAY.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
+Start-Process -FilePath $gctPath ".\sd_base\sBrawl\NETPLAY.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
 Write-Host "`n###################################################################################################`n"
 Write-Host "`n`nCreating codes for BOOST`n"
-Start-Process -FilePath $gctPath ".\sd_base\codes\BOOST.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
+Start-Process -FilePath $gctPath ".\sd_base\sBrawl\BOOST.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
 Write-Host "`n###################################################################################################`n"
 Write-Host "`n`nCreating codes for NETBOOST`n"
-Start-Process -FilePath $gctPath ".\sd_base\codes\NETBOOST.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
+Start-Process -FilePath $gctPath ".\sd_base\sBrawl\NETBOOST.txt" -RedirectStandardInput $enterFile -NoNewWindow -Wait
 
 Write-Host "`n###################################################################################################`n"
 Write-Host "`n`n`Creating Fighter Inject GCTs`n"

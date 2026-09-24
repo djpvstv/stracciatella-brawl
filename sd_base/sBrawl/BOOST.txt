@@ -1,0 +1,213 @@
+###############################################
+[Legacy TE] Extra null pointer catch [Fracture]
+###############################################
+.RESET
+op cmplwi r0, 0x30 @ $8018CFC4
+op blt- 0x34	   @ $8018CFC8
+
+.include Source/LegacyTE/Replays.asm
+
+########################################################################
+!Decrease MenuInstance Heap in SSE (for use with 242 + 50CC) [Exul Anima]
+########################################################################
+word 0x117E00 @ $8042207C     # Decreases MenuInstance heap by 48KB: 16KB is to resolve overlap between this and BrawlX heap in SSE, the other 32KB is room for expansion.
+
+.include Source/Project+/StageFiles.asm
+.include Source/Project+/CustomRequirements.asm
+.include Source/Project+/Timeout.asm
+.include Source/Project+/UCF.asm
+.include Source/Project+/PSA.asm
+.include Source/Project+/AnimatedCSS.asm
+.include Source/Project+/Hurtbox.asm
+
+#include Source/ProjectM/IdleAudioFade.asm
+
+###############################################
+!Sleep doesn't pierce armour in air [Eon]
+# Formerly in Source/ProjectM/PSA/Misc.asm
+# Moved so the rest of that file could be
+# converted into an inject!
+###############################################
+HOOK @ $8085CDD0
+{
+    stw r4, 0xC(r1)
+    lwz r3, 0xD8(r4)
+}
+HOOK @ $8085CDF0 
+{
+    lwz r3, 0xC(r1)
+    lwz r3, 0xD8(r3)
+    lwz r3, 0x14(r3)
+    lwz r12, 0(r3)
+    lwz r12, 0x14(r12)
+    mtctr r12 
+    bctrl 
+    cmpwi r3, 2 #if situation = in air, noReaction = true
+    beq true
+false:
+    li r3, 0
+    b %end%
+true:
+    li r3, 1
+}
+
+###########################################################
+!Olimar Antenna Light Changes with Pikmin Color V1.1 [Magus]
+###########################################################
+HOOK @ $80913198
+{
+  lwz r12, 0x70(r21)	# \
+  lwz r12, 0x20(r12)	# |
+  lwz r12, 0x0C(r12)	# | Access character ID
+  lwz r12, 0x2D0(r12)	# |
+  lwz r12, 0x08(r12)	# |
+  lis r3, 0x9200	# | \ Safety check for Nana
+  cmpw r12, r3		# | |
+  bge- loc_0x12C	# | |
+  lis r3, 0x8120	# | |
+  cmpw r12, r3		# | |
+  blt- loc_0x12C	# | /
+  lwz r12, 0x110(r12)	# / 
+  cmpwi r12, 0x19		# \ 
+  bne+ loc_0x12C		# / Only do the below for Olimar
+  lwz r12, 32(r20)
+  lwz r12, 12(r12)
+  lwz r11, 212(r21)
+  addi r11, r11, 0x1D00
+  lwz r3, -8(r11)
+  li r0, 0xFFFF
+  rlwinm r3, r3, 10, 27, 31
+  cmpwi r3, 0x6
+  bge- loc_0x44
+  mulli r3, r3, 0xC
+  lwzx r11, r11, r3
+  lwz r0, 9468(r11)
+
+loc_0x44:
+  lwz r11, 372(r12)
+  lwz r3, 376(r12)
+  stw r0, 376(r12)
+  cmpw r11, r0;  beq+ loc_0x12C
+  cmpw r3, r0;  bne- loc_0x12C
+  stw r0, 372(r12)
+  stwu r1, -124(r1)
+  stmw r3, 8(r1)
+  mflr r31
+  mr r30, r0
+  lwz r29, 148(r21)
+  li r28, 0xE
+
+loc_0x7C:
+  lis r3, 0x805A
+  lwz r3, 328(r3)
+  lwz r4, 72(r29)
+  lis r5, 0x100
+  subi r5, r5, 0x100
+  li r6, 0x0
+  li r7, 0x0
+  lis r8, 0x1A
+  or r8, r8, r28
+  lis r12, 0x8006
+  ori r12, r12, 0xE20
+  mtctr r12
+  bctrl 
+  addi r28, r28, 0x1
+  cmpwi r28, 0x14
+  bne+ loc_0x7C
+  addi r30, r30, 0xF
+  li r22, 0xFFFF
+  lis r12, 0x3FC0
+  ori r12, r12, 0x0
+  stw r12, 20(r2)
+  li r11, 0x0
+  stw r11, 24(r2)
+  stw r11, 28(r2)
+  stw r11, 32(r2)
+  li r14, 0x2329
+  mr r3, r29
+  lis r4, 0x1A
+  or r4, r4, r30
+  li r5, 0x1E
+  addi r6, r2, 0x18
+  mr r7, r6
+  li r8, 0x0
+  li r9, 0x2
+  li r10, 0x0
+  lfs f1, 20(r2)
+  stw r22, 16(r2)
+  lis r12, 0x807A
+  ori r12, r12, 0x3DC0
+  mtctr r12
+  bctrl 
+  mtlr r31
+  lmw r3, 8(r1)
+  addi r1, r1, 0x7C
+
+loc_0x12C:
+  mr r3, r20
+}
+
+.include Source/ProjectM/SpecialModes/Stamina.asm
+
+#.include Source/Project+/Physics.asm
+
+.include Source/ProjectM/CSS.asm
+.include Source/ProjectM/TrainingMode.asm
+#.include Source/ProjectM/ThrowRelease.asm
+#.include Source/ProjectM/Powershield.asm
+.include Source/ProjectM/Psa.asm
+
+#.include Source/Project+/Hitbox.asm
+
+.include Source/LegacyTE/AltCostume.asm
+.include Source/LegacyTE/LoadFlags.asm
+.include Source/LegacyTE/ASLHelper.asm
+.include Source/LegacyTE/UnboundedTeamEngine.asm
+
+.include Source/ProjectM/CustomAI.asm
+.include Source/ProjectM/VariableSet.asm
+
+.include Source/Project+/Articles.asm
+#.include Source/Project+/BigHeadMode.asm
+#.include Source/Project+/RandomAngleMode.asm
+.include Source/Project+/IndependentSub.asm
+.include Source/Project+/TrainingMode.asm
+.include Source/Project+/VictoryCamera.asm
+
+.include Source/Project+/EffectCommands.asm
+.include Source/Project+/Attributes.asm
+.include Source/Project+/PokeTrainer.asm
+
+.include Source/Project+/Pause.asm
+.include Source/Project+/Collision.asm
+
+.include Source/Community/Subspace.asm
+.include Source/Community/SubspaceSwap.asm
+.include Source/Community/MusicSelect.asm
+#.include Source/Community/ParryTaunts.asm
+.include Source/Community/PSA/PSA.asm
+
+.include Source/P+Ex/AllStar.asm
+.include Source/P+Ex/Angle.asm
+.include Source/P+Ex/CustomEnding.asm
+.include Source/P+Ex/SlotEx.asm
+.include Source/P+Ex/DLC.asm
+.include Source/P+Ex/IC-Basics.asm
+.include Source/P+Ex/Maths.asm
+.include Source/P+Ex/Misc.asm
+.include Source/P+Ex/PassiveAnim.asm
+.include Source/P+Ex/PointerWizardry.asm
+
+.include Source/P+Ex/SoundbankFix.asm
+.include Source/P+Ex/Subspace.asm
+.include Source/P+Ex/VariableParameter.asm
+.include Source/Community/lavaInjectLoader.asm
+
+
+#.include Source/Extras/Console.asm	# Only use this on a Wii or Wii U! The codes in this are necessary for the slower specifications of the actual console.
+
+.include Source/Extras/More.asm
+
+.include Source/Rex/UITouchups.asm
+.include Source/Rex/Tags.asm
+.include Source/Rex/Rules.asm

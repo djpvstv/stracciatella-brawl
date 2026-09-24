@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<!--PowerPC Assembly Functions (Code Menu Building Utility)-->
+<!--Important Note: Only change values noted as editable! Changing anything else will not work!-->
+<codeMenu cmnuPath="sBrawl/pf/menu3/data.cmnu">
+	<codeMenuPage name="Main">
+		<codeMenuSelection name="Endless Friendlies Mode">
+			<defaultOption index="0" editable="true" />
+			<option value="OFF" />
+			<option value="All Stay" />
+			<option value="Winner Stays" />
+			<option value="Loser Stays" />
+			<option value="Rotation" />
+		</codeMenuSelection>
+		<codeMenuSelection name="Endless Friendlies Stage Selection">
+			<defaultOption index="0" editable="true" />
+			<option value="Random" />
+			<option value="Same" />
+		</codeMenuSelection>
+		<codeMenuSelection name="Alternate Stages">
+			<defaultOption index="0" editable="true" />
+			<option value="Enabled" />
+			<option value="Random" />
+			<option value="OFF" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Autoskip Results Screen">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Autosave Replays">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Save Previous Replay">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Tag-Based Costumes">
+			<defaultOption index="0" editable="true" />
+			<option value="ON" />
+			<option value="ON + Teams" />
+			<option value="OFF" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Crowd Cheers">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Code Menu Activation">
+			<defaultOption index="0" editable="true" />
+			<option value="Default" />
+			<option value="PM 3.6" />
+			<option value="OFF" />
+		</codeMenuSelection>
+	</codeMenuPage>
+	<codeMenuPage name="Debug Mode Settings">
+		<codeMenuToggle name="Debug Mode">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Hitbox Display">
+			<defaultOption index="0" editable="true" />
+			<option value="OFF" />
+			<option value="ON" />
+			<option value="Models Off" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Collision Display">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Stage Collisions">
+			<defaultOption index="0" editable="true" />
+			<option value="OFF" />
+			<option value="ON" />
+			<option value="Background Off" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Camera Lock">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Draw DI">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="FPS Display">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="HUD">
+			<defaultValue value="true" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Raycast Display">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuFloat name="Volume Ratio">
+			<minValue value="0.000000" />
+			<defaultValue value="50.000000" editable="true" />
+			<maxValue value="100.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+	</codeMenuPage>
+	<codeMenuPage name="Player 1 Codes">
+		<codeMenuToggle name="Infinite Shield">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="P1 Character Select">
+			<defaultOption index="0" editable="true" />
+			<option value="Blue Alloy" />
+			<option value="Bowser" />
+			<option value="Captain Falcon" />
+			<option value="Charizard" />
+			<option value="Dark Samus" />
+			<option value="Dedede" />
+			<option value="Diddy Kong" />
+			<option value="Donkey Kong" />
+			<option value="Falco" />
+			<option value="Fox" />
+			<option value="Ganondorf" />
+			<option value="Giga Bowser" />
+			<option value="Green Alloy" />
+			<option value="Ice Climbers" />
+			<option value="Ike" />
+			<option value="Ivysaur" />
+			<option value="Jigglypuff" />
+			<option value="Kirby" />
+			<option value="Knuckles" />
+			<option value="Link" />
+			<option value="Lucario" />
+			<option value="Lucas" />
+			<option value="Luigi" />
+			<option value="Mario" />
+			<option value="Marth" />
+			<option value="Meta Knight" />
+			<option value="Mewtwo" />
+			<option value="Mr. Game and Watch" />
+			<option value="Ness" />
+			<option value="Olimar" />
+			<option value="Peach" />
+			<option value="Pikachu" />
+			<option value="Pit" />
+			<option value="R.O.B." />
+			<option value="Red Alloy" />
+			<option value="Ridley" />
+			<option value="Roy" />
+			<option value="Samus" />
+			<option value="Sceptile" />
+			<option value="Sheik" />
+			<option value="Snake" />
+			<option value="Sonic" />
+			<option value="Sopo" />
+			<option value="Squirtle" />
+			<option value="Toon Link" />
+			<option value="Waluigi" />
+			<option value="Wario" />
+			<option value="Warioman" />
+			<option value="Wolf" />
+			<option value="Yellow Alloy" />
+			<option value="Yoshi" />
+			<option value="Zelda" />
+			<option value="Zero Suit Samus" />
+		</codeMenuSelection>
+		<codeMenuFloat name="Select Percent">
+			<minValue value="0.000000" />
+			<defaultValue value="0.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Press DPad to select percent">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Disable DPad">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Input Buffer">
+			<defaultOption index="0" editable="true" />
+			<option value="0" />
+			<option value="1" />
+			<option value="2" />
+			<option value="3" />
+			<option value="4" />
+			<option value="5" />
+			<option value="6" />
+			<option value="7" />
+			<option value="8" />
+			<option value="9" />
+			<option value="10" />
+		</codeMenuSelection>
+		<codeMenuSelection name="Automatic L-Cancelling">
+			<defaultOption index="0" editable="true" />
+			<option value="OFF" />
+			<option value="ON" />
+			<option value="Modified" />
+		</codeMenuSelection>
+		<codeMenuFloat name="ALC Modifier">
+			<minValue value="0.099000" />
+			<defaultValue value="0.500000" editable="true" />
+			<maxValue value="3.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Red Flash on L-Cancel Failure">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 2 Codes">
+		<codeMenuToggle name="Infinite Shield">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="P2 Character Select">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > P1 Character Select"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="Select Percent">
+			<minValue value="0.000000" />
+			<defaultValue value="0.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Press DPad to select percent">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Disable DPad">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Input Buffer">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Input Buffer"!-->
+		</codeMenuSelection>
+		<codeMenuSelection name="Automatic L-Cancelling">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Automatic L-Cancelling"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="ALC Modifier">
+			<minValue value="0.099000" />
+			<defaultValue value="0.500000" editable="true" />
+			<maxValue value="3.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Red Flash on L-Cancel Failure">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 3 Codes">
+		<codeMenuToggle name="Infinite Shield">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="P3 Character Select">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > P1 Character Select"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="Select Percent">
+			<minValue value="0.000000" />
+			<defaultValue value="0.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Press DPad to select percent">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Disable DPad">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Input Buffer">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Input Buffer"!-->
+		</codeMenuSelection>
+		<codeMenuSelection name="Automatic L-Cancelling">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Automatic L-Cancelling"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="ALC Modifier">
+			<minValue value="0.099000" />
+			<defaultValue value="0.500000" editable="true" />
+			<maxValue value="3.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Red Flash on L-Cancel Failure">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 4 Codes">
+		<codeMenuToggle name="Infinite Shield">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="P4 Character Select">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > P1 Character Select"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="Select Percent">
+			<minValue value="0.000000" />
+			<defaultValue value="0.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Press DPad to select percent">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Disable DPad">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Input Buffer">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Input Buffer"!-->
+		</codeMenuSelection>
+		<codeMenuSelection name="Automatic L-Cancelling">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Codes > Automatic L-Cancelling"!-->
+		</codeMenuSelection>
+		<codeMenuFloat name="ALC Modifier">
+			<minValue value="0.099000" />
+			<defaultValue value="0.500000" editable="true" />
+			<maxValue value="3.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuToggle name="Red Flash on L-Cancel Failure">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Special Modes">
+		<codeMenuSelection name="Random Angle Mode">
+			<defaultOption index="0" editable="true" />
+			<option value="Off" />
+			<option value="True Random" />
+			<option value="Static Random" />
+		</codeMenuSelection>
+		<codeMenuToggle name="War Mode" hidden="true">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Gameplay Speed Modifier">
+			<defaultOption index="0" editable="true" />
+			<option value="Off" />
+			<option value="1.25" />
+			<option value="1.5x" />
+			<option value="2.0x" />
+			<option value="1/2x" />
+			<option value="3/4x" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Scale Mode">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuFloat name="Scale Modifier">
+			<minValue value="0.500000" />
+			<defaultValue value="1.000000" editable="true" />
+			<maxValue value="3.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuSelection name="Big Head Mode">
+			<defaultOption index="0" editable="true" />
+			<option value="Off" />
+			<option value="On" />
+			<option value="Larger" />
+			<option value="Largest" />
+			<option value="Largerest" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Melee Game Finish Camera Freeze">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Parry Taunts">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Universal Walljump Toggle">
+			<defaultOption index="2" editable="true" />
+			<option value="Disabled" />
+			<option value="Enabled" />
+			<option value="Default" />
+		</codeMenuSelection>
+	</codeMenuPage>
+	<codeMenuPage name="Gameplay Modifiers">
+		<codeMenuFloat name="Hitstun Multiplier">
+			<minValue value="0.000000" />
+			<defaultValue value="0.400000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.010000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Hitlag Multiplier">
+			<minValue value="0.000000" />
+			<defaultValue value="0.333333" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.020000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Hitlag Maximum">
+			<minValue value="0.000000" />
+			<defaultValue value="30.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Electric Hitlag Multiplier">
+			<minValue value="0.000000" />
+			<defaultValue value="1.500000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.100000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="SDI Distance">
+			<minValue value="-999.000000" />
+			<defaultValue value="6.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.500000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="ASDI Distance">
+			<minValue value="-999.000000" />
+			<defaultValue value="3.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.500000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Walljump Horizontal Multiplier">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.900000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Minimum Shield Size Scale">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.150000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.020000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Shield Damage Multiplier">
+			<minValue value="-999.000000" />
+			<defaultValue value="1.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.020000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Base Shield Damage">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="1.000000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Shield Size Multiplier">
+			<minValue value="-999.000000" />
+			<defaultValue value="1.000000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Shield Tilt Multiplier">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.500000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Wall Bounce Knockback Multiplier">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.800000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.020000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Knockback Decay Rate">
+			<minValue value="-999.000000" />
+			<defaultValue value="0.051000" editable="true" />
+			<maxValue value="999.000000" />
+			<speed value="0.001000" />
+		</codeMenuFloat>
+		<codeMenuSelection name="Staling Toggle">
+			<defaultOption index="0" editable="true" />
+			<option value="Default" />
+			<option value="ON" />
+			<option value="OFF" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Aerial &amp; Dash Attack Item Grab Toggle">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuSelection name="Jumpsquat Modifier Mode">
+			<defaultOption index="0" editable="true" />
+			<option value="Disabled" />
+			<option value="Replace" />
+			<option value="Add" />
+			<option value="Subtract" />
+			<option value="Multiply" />
+			<option value="Divide" />
+			<option value="Distance From Value" />
+			<option value="Random Within Range" />
+		</codeMenuSelection>
+		<codeMenuInt name="Jumpsquat Modifier Value">
+			<minValue value="1" />
+			<defaultValue value="3" editable="true" />
+			<maxValue value="3600" />
+			<speed value="1" />
+		</codeMenuInt>
+		<codeMenuInt name="Jumpsquat Modifier Minimum Length">
+			<minValue value="1" />
+			<defaultValue value="1" editable="true" />
+			<maxValue value="3600" />
+			<speed value="1" />
+		</codeMenuInt>
+		<codeMenuInt name="Jumpsquat Modifier Maximum Length">
+			<minValue value="1" />
+			<defaultValue value="3600" editable="true" />
+			<maxValue value="3600" />
+			<speed value="1" />
+		</codeMenuInt>
+	</codeMenuPage>
+	<codeMenuPage name="Flight Mode Settings">
+		<codeMenuToggle name="Flight Mode">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuFloat name="Max Horizontal Speed">
+			<minValue value="0.000000" />
+			<defaultValue value="2.000000" editable="true" />
+			<maxValue value="100.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Max Vertical Speed">
+			<minValue value="0.000000" />
+			<defaultValue value="2.000000" editable="true" />
+			<maxValue value="100.000000" />
+			<speed value="0.050000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Horizontal Acceleration">
+			<minValue value="-100.000000" />
+			<defaultValue value="1.000000" editable="true" />
+			<maxValue value="100.000000" />
+			<speed value="0.010000" />
+		</codeMenuFloat>
+		<codeMenuFloat name="Vertical Acceleration">
+			<minValue value="-100.000000" />
+			<defaultValue value="1.000000" editable="true" />
+			<maxValue value="100.000000" />
+			<speed value="0.010000" />
+		</codeMenuFloat>
+	</codeMenuPage>
+	<codeMenuPage name="Bonus Mechanic Settings" />
+	<codeMenuPage name="Player 1 Mechanic Settings">
+		<codeMenuSelection name="Active Mechanic">
+			<defaultOption index="0" editable="true" />
+			<option value="None" />
+			<option value="Airdodge Cancels" />
+			<option value="Slime Cancels" />
+			<option value="Rocket Burst" />
+		</codeMenuSelection>
+		<codeMenuToggle name="Magic Series">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Final Smash Meter">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Focus Attacks">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 2 Mechanic Settings">
+		<codeMenuSelection name="Active Mechanic">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Mechanic Settings > Active Mechanic"!-->
+		</codeMenuSelection>
+		<codeMenuToggle name="Magic Series">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Final Smash Meter">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Focus Attacks">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 3 Mechanic Settings">
+		<codeMenuSelection name="Active Mechanic">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Mechanic Settings > Active Mechanic"!-->
+		</codeMenuSelection>
+		<codeMenuToggle name="Magic Series">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Final Smash Meter">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Focus Attacks">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 4 Mechanic Settings">
+		<codeMenuSelection name="Active Mechanic">
+			<defaultOption index="0" editable="true" />
+			<!--Note: This Selection is a mirror of "Player 1 Mechanic Settings > Active Mechanic"!-->
+		</codeMenuSelection>
+		<codeMenuToggle name="Magic Series">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Final Smash Meter">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Focus Attacks">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 1 RivalsMode Settings">
+		<codeMenuToggle name="Parries">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Hitfalling">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Baby Dashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Tilt Cancels">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Actionable Airdodges">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Wavedash out of Jumpsquat">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Full-Horizontal Wavedashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Button Walljumps">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Walljump from Special Fall">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Same-Direction Walljump Restriction">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Non-Shrinking Shields">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Reduced Shieldbreak Stun">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 2 RivalsMode Settings">
+		<codeMenuToggle name="Parries">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Hitfalling">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Baby Dashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Tilt Cancels">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Actionable Airdodges">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Wavedash out of Jumpsquat">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Full-Horizontal Wavedashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Button Walljumps">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Walljump from Special Fall">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Same-Direction Walljump Restriction">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Non-Shrinking Shields">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Reduced Shieldbreak Stun">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 3 RivalsMode Settings">
+		<codeMenuToggle name="Parries">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Hitfalling">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Baby Dashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Tilt Cancels">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Actionable Airdodges">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Wavedash out of Jumpsquat">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Full-Horizontal Wavedashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Button Walljumps">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Walljump from Special Fall">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Same-Direction Walljump Restriction">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Non-Shrinking Shields">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Reduced Shieldbreak Stun">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="Player 4 RivalsMode Settings">
+		<codeMenuToggle name="Parries">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Hitfalling">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Baby Dashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Tilt Cancels">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Actionable Airdodges">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Wavedash out of Jumpsquat">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Full-Horizontal Wavedashes">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Button Walljumps">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Walljump from Special Fall">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Same-Direction Walljump Restriction">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Non-Shrinking Shields">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+		<codeMenuToggle name="Reduced Shieldbreak Stun">
+			<defaultValue value="false" editable="true" />
+		</codeMenuToggle>
+	</codeMenuPage>
+	<codeMenuPage name="HUD Colors">
+		<codeMenuSelection name="Player 1" sticky="true">
+			<defaultOption index="0" editable="true" />
+			<option value="P1" />
+			<option value="P2" />
+			<option value="P3" />
+			<option value="P4" />
+			<option value="Pink" />
+			<option value="Purple" />
+			<option value="Orange" />
+			<option value="Cyan" />
+			<option value="Gray" />
+			<option value="Black" />
+			<option value="White" />
+			<option value="RGB" />
+			<option value="DarkRGB" />
+		</codeMenuSelection>
+		<codeMenuSelection name="Player 2" sticky="true">
+			<defaultOption index="1" editable="true" />
+			<!--Note: This Selection is a mirror of "HUD Colors > Player 1"!-->
+		</codeMenuSelection>
+		<codeMenuSelection name="Player 3" sticky="true">
+			<defaultOption index="2" editable="true" />
+			<!--Note: This Selection is a mirror of "HUD Colors > Player 1"!-->
+		</codeMenuSelection>
+		<codeMenuSelection name="Player 4" sticky="true">
+			<defaultOption index="3" editable="true" />
+			<!--Note: This Selection is a mirror of "HUD Colors > Player 1"!-->
+		</codeMenuSelection>
+	</codeMenuPage>
+</codeMenu>

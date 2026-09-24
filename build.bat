@@ -7,9 +7,9 @@ cd /d "%~dp0"
 :: =============================================
 :: Configuration
 :: =============================================
-set "GCT=sd_base\codes\GCTRealMate.exe"
-set "ENTER=sd_base\codes\enter.txt"
-set "SRC_INJECT=sd_base\codes\Source\Community\Injects"
+set "GCT=sd_base\sBrawl\GCTRealMate.exe"
+set "ENTER=sd_base\sBrawl\enter.txt"
+set "SRC_INJECT=sd_base\sBrawl\Source\Community\Injects"
 set "DEST_INJECT=sd_base\private\wii\app\rsbe\pf\injects"
 
 echo.
@@ -33,28 +33,28 @@ echo .
 echo ========================
 echo [1/5] Building Codes RSBE01...
 echo ========================
-"%GCT%" "sd_base\codes\RSBE01.txt" < "%ENTER%"
+"%GCT%" "sd_base\sBrawl\RSBE01.txt" < "%ENTER%"
 echo.
 
 echo .
 echo =======================
 echo [2/5] Building Codes BOOST...
 echo =======================
-"%GCT%" "sd_base\codes\BOOST.txt" < "%ENTER%"
+"%GCT%" "sd_base\sBrawl\BOOST.txt" < "%ENTER%"
 echo.
 
 echo .
 echo ========================
 echo [3/5] Building Codes NETPLAY...
 echo ========================
-"%GCT%" "sd_base\codes\NETPLAY.txt" < "%ENTER%"
+"%GCT%" "sd_base\sBrawl\NETPLAY.txt" < "%ENTER%"
 echo.
 
 echo .
 echo =======================
 echo [4/5] Building Codes NETBOOST...
 echo =======================
-"%GCT%" "sd_base\codes\NETBOOST.txt" < "%ENTER%"
+"%GCT%" "sd_base\sBrawl\NETBOOST.txt" < "%ENTER%"
 echo.
 
 :: 2. Injects
