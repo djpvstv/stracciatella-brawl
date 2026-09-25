@@ -4859,9 +4859,9 @@ loc_0x022:
 ####################################
 [CM_Addons] Code Menu Addon Includes
 ####################################
-#.include "Source/CM_Addons/MECH_HUB/Source.asm"
-#.include "Source/CM_Addons/MLEEFREZ/Source.asm"
-#.include "Source/CM_Addons/RAYDEBUG/Source.asm"
-#.include "Source/CM_Addons/PRYTAUNT/Source.asm"
-#.include "Source/CM_Addons/UNVWLJMP/Source.asm"
-#.include "Source/CM_Addons/VOLBLNCE/Source.asm"
+.include "Source/CM_Addons/MECH_HUB/Source.asm"
+.include "Source/CM_Addons/MLEEFREZ/Source.asm"
+.include "Source/CM_Addons/RAYDEBUG/Source.asm"
+.include "Source/CM_Addons/PRYTAUNT/Source.asm"
+.include "Source/CM_Addons/UNVWLJMP/Source.asm"
+.include "Source/CM_Addons/VOLBLNCE/Source.asm"

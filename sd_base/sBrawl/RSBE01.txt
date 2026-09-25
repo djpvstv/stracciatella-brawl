@@ -629,6 +629,11 @@ HOOK @ $801f3058
 .include  Source/ProjectM/CloneEngine.asm
 
 .include Source/CodeMenu/CodeMenu.asm
+.include Source/CodeMenu/BigHeadMode.asm
+.include Source/CodeMenu/InputBuffer.asm
+.include Source/CodeMenu/RandomAngleMode.asm
+.include Source/CodeMenu/ScaleModifier.asm
+.include Source/CodeMenu/SpeedModifier.asm
 
 #.include Source/Project+/TripRate.asm
 .include Source/Project+/CompressPAC.asm
