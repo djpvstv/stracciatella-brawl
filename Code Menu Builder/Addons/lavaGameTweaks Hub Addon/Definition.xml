@@ -27,7 +27,7 @@
 		</codeMenuSelection>
 		<codeMenuComment text="Passive Mechanics: "/>
 		<codeMenuToggle name="Magic Series" shortName="LINE_005"/>
-		<codeMenuToggle name="Final Smash Meter" shortName="LINE_009"/>
+		<codeMenuToggle name="Final Smash Meter" shortName="LINE_009" hidden="true"/>
 		<codeMenuToggle name="Focus Attacks" shortName="LINE_013"/>
 	</codeMenuPage>
 	<codeMenuPage shortName="PAGE_R01">
@@ -37,8 +37,8 @@
 		<codeMenuToggle name="Baby Dashes" shortName="LINE_029"/>
 		<codeMenuToggle name="Tilt Cancels" shortName="LINE_045"/>
 		<codeMenuToggle name="Actionable Airdodges" shortName="LINE_025"/>
-		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_017"/>
-		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_021"/>
+		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_017" hidden="true"/>
+		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_021" hidden="true"/>
 		<codeMenuToggle name="Button Walljumps" shortName="LINE_033"/>
 		<codeMenuToggle name="Walljump from Special Fall" shortName="LINE_037"/>
 		<codeMenuToggle name="Same-Direction Walljump Restriction" shortName="LINE_041"/>
@@ -53,7 +53,7 @@
 		</codeMenuSelectionMirror>
 		<codeMenuComment text="Passive Mechanics: "/>
 		<codeMenuToggle name="Magic Series" shortName="LINE_006"/>
-		<codeMenuToggle name="Final Smash Meter" shortName="LINE_010"/>
+		<codeMenuToggle name="Final Smash Meter" shortName="LINE_010" hidden="true"/>
 		<codeMenuToggle name="Focus Attacks" shortName="LINE_014"/>
 	</codeMenuPage>
 	<codeMenuPage shortName="PAGE_R02">
@@ -63,8 +63,8 @@
 		<codeMenuToggle name="Baby Dashes" shortName="LINE_030"/>
 		<codeMenuToggle name="Tilt Cancels" shortName="LINE_046"/>
 		<codeMenuToggle name="Actionable Airdodges" shortName="LINE_026"/>
-		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_018"/>
-		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_022"/>
+		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_018" hidden="true"/>
+		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_022" hidden="true"/>
 		<codeMenuToggle name="Button Walljumps" shortName="LINE_034"/>
 		<codeMenuToggle name="Walljump from Special Fall" shortName="LINE_038"/>
 		<codeMenuToggle name="Same-Direction Walljump Restriction" shortName="LINE_042"/>
@@ -79,7 +79,7 @@
 		</codeMenuSelectionMirror>
 		<codeMenuComment text="Passive Mechanics: "/>
 		<codeMenuToggle name="Magic Series" shortName="LINE_007"/>
-		<codeMenuToggle name="Final Smash Meter" shortName="LINE_011"/>
+		<codeMenuToggle name="Final Smash Meter" shortName="LINE_011" hidden="true"/>
 		<codeMenuToggle name="Focus Attacks" shortName="LINE_015"/>
 	</codeMenuPage>
 	<codeMenuPage shortName="PAGE_R03">
@@ -89,8 +89,8 @@
 		<codeMenuToggle name="Baby Dashes" shortName="LINE_031"/>
 		<codeMenuToggle name="Tilt Cancels" shortName="LINE_047"/>
 		<codeMenuToggle name="Actionable Airdodges" shortName="LINE_027"/>
-		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_019"/>
-		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_023"/>
+		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_019" hidden="true"/>
+		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_023" hidden="true"/>
 		<codeMenuToggle name="Button Walljumps" shortName="LINE_035"/>
 		<codeMenuToggle name="Walljump from Special Fall" shortName="LINE_039"/>
 		<codeMenuToggle name="Same-Direction Walljump Restriction" shortName="LINE_043"/>
@@ -105,7 +105,7 @@
 		</codeMenuSelectionMirror>
 		<codeMenuComment text="Passive Mechanics: "/>
 		<codeMenuToggle name="Magic Series" shortName="LINE_008"/>
-		<codeMenuToggle name="Final Smash Meter" shortName="LINE_012"/>
+		<codeMenuToggle name="Final Smash Meter" shortName="LINE_012" hidden="true"/>
 		<codeMenuToggle name="Focus Attacks" shortName="LINE_016"/>
 	</codeMenuPage>
 	<codeMenuPage shortName="PAGE_R04">
@@ -115,8 +115,8 @@
 		<codeMenuToggle name="Baby Dashes" shortName="LINE_032"/>
 		<codeMenuToggle name="Tilt Cancels" shortName="LINE_048"/>
 		<codeMenuToggle name="Actionable Airdodges" shortName="LINE_028"/>
-		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_020"/>
-		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_024"/>
+		<codeMenuToggle name="Wavedash out of Jumpsquat" shortName="LINE_020" hidden="true"/>
+		<codeMenuToggle name="Full-Horizontal Wavedashes" shortName="LINE_024" hidden="true"/>
 		<codeMenuToggle name="Button Walljumps" shortName="LINE_036"/>
 		<codeMenuToggle name="Walljump from Special Fall" shortName="LINE_040"/>
 		<codeMenuToggle name="Same-Direction Walljump Restriction" shortName="LINE_044"/>
