@@ -1,7 +1,8 @@
 
-#############################
-Cherry Double v1.2 [Kapedani]
-#############################
+####################################################
+Cherry Double v1.3 [Kapedani, Squidgy]
+# v1.3 - Fix Pokemon Trainer unloading when swapping
+####################################################
 .alias g_GameGlobal                         = 0x805a00E0
 .alias g_itManager                          = 0x80B8B7F4
 .alias itManager__removeItemAll             = 0x809b2750
@@ -386,6 +387,9 @@ HOOK @ $80835610    # Fighter::deactivate
 
 HOOK @ $8082374c    # ftEntry::process
 {   
+    lwz r3, 0x48(r29)  # \
+    cmpwi r3, 0x1C     # | check if ftEntry->instances[3].ftKind == Pokemon Trainer
+    beq- end           # /
     lwz r3, 0x4c(r29)  # \
     cmpwi r3, 0x0      # | check if ftEntry->instances[3].fighter == NULL
     beq+ end           # /
@@ -404,6 +408,9 @@ end:
 }
 HOOK @ $808206f0    # ftEntry::startChange
 {
+    lwz r3, 0x48(r29)  # \
+    cmpwi r3, 0x1C     # | check if ftEntry->instances[3].ftKind == Pokemon Trainer
+    beq- %end%         # /
     lwz r3, 0x4c(r29)  # \
     cmpwi r3, 0x0      # | check if ftEntry->instances[3].fighter == NULL
     beq+ %end%         # /
@@ -417,6 +424,9 @@ HOOK @ $808206f0    # ftEntry::startChange
 }
 HOOK @ $8081f7c0    # ftEntry::restart
 {
+    lwz r3, 0x48(r30)  # \
+    cmpwi r3, 0x1C     # | check if ftEntry->instances[3].ftKind == Pokemon Trainer
+    beq- end           # /
     lwz r3, 0x4c(r30)  # \
     cmpwi r3, 0x0      # | check if ftEntry->instances[3].fighter == NULL
     beq+ end           # /
@@ -434,6 +444,9 @@ HOOK @ $8082040c    # ftEntry::setFinal
 {
     lwz	r3, 0(r3)   # Original operation
     stw r3, 0x8(r1)
+    lwz r8, 0x48(r3)  # \
+    cmpwi r8, 0x1C     # | check if ftEntry->instances[3].ftKind == Pokemon Trainer
+    beq- end           # /
     lwz r3, 0x4c(r3)    # \
     cmpwi r3, 0x0       # | check if ftEntry->instances[3].fighter == NULL
     beq+ end            # /

@@ -14,9 +14,10 @@
 # 0x030 = Owner of last hitbox to damage
 # 0x034 = Type of damager
 # 0x038 = Type ID (if an article)
-####################################################################
-LA Variables Expansion and Additional Info System [Magus, DukeItOut]
-####################################################################
+##################################################################################
+LA Variables Expansion and Additional Info System v 1a [Magus, DukeItOut, Squidgy]
+# v1a - Adjust allocation to support PT
+##################################################################################s
 .alias LA_region = 0x935F0000
 .macro Address(<arg1>)
 {
@@ -32,8 +33,8 @@ HOOK @ $80585540
   %Address(LA_region)	# Area to use as freespace for LA variables
   lhz r7, -0x86(r30)	# Get the port ID
   lhz r6, -0x98(r30)	# Get the sub character ID  
-  mulli r11, r7, 0x880		# Allocate 0x880 bytes for each port (total space used for four slots: 0x2200 bytes, up from 0x21C0 for PM)
-  mulli r3, r6, 0x2D4		# Allocate 0x2D4 bytes for each sub character (up to 3 slots, allowed, up from 0x2D0 bytes for PM and 0x1C4 bytes in Brawl)
+  mulli r11, r7, 0xB54		# Allocate 0xB54 bytes for each port (total space used for four slots: 0x2D50 for PT inclusion, up from 0x2200 bytes before, up from 0x21C0 for PM)
+  mulli r3, r6, 0x2D4		# Allocate 0x2D4 bytes for each sub character (up to 4 slots, allowed, up from 0x2D0 bytes for PM and 0x1C4 bytes in Brawl)
   add r12, r12, r11
   add r12, r12, r3
   li r3, 0x2D4			# \ 0x2D4
@@ -190,23 +191,22 @@ notValid:
   fadds f2, f8, f7	
 }
 
-# ################################################
-# SCD Bottom Point Initialization Fix v2.0 [Magus]
-# ################################################
-# This breaks us, causes weird issue with low knockback ground collisions, e.g. lucina dtilt fox shine
-# HOOK @ $80739AE8
-# {
-#   lwz r12, 0x1C(r23)
-#   lwz r12, 0x28(r12)
-#   lwz r12, 0x10(r12)
-#   lbz r12, 0x08(r12)
-#   cmpwi r12, 0x2
-#   bne+ loc_0x1C
-#   lfs f1, 0x08(r31)
+################################################
+SCD Bottom Point Initialization Fix v2.0 [Magus]
+################################################
+HOOK @ $80739AE8
+{
+  lwz r12, 0x1C(r23)
+  lwz r12, 0x28(r12)
+  lwz r12, 0x10(r12)
+  lbz r12, 0x08(r12)
+  cmpwi r12, 0x2
+  bne+ loc_0x1C
+  lfs f1, 0x08(r31)
 
-# loc_0x1C:
-#   stfs f1, 0(r25)
-# }
+loc_0x1C:
+  stfs f1, 0(r25)
+}
 
 ####################################
 Ground Stabilization Fix [DukeItOut]

@@ -156,7 +156,7 @@ BrawlVideoBehavior:
 }
 
 #######################################################
-Independent Pokemon Custom Video/Ending Fix [DukeItOut]
+!Independent Pokemon Custom Video/Ending Fix [DukeItOut]
 #######################################################
 # Squirtle, Ivysaur and Charizard load their own ending 
 #   scenes instead of Pokemon Trainer's, which is 
