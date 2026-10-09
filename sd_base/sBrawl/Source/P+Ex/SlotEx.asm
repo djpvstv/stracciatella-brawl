@@ -43,8 +43,8 @@ Table:
 Table_Skip:
 .BA -> $806948C8                                    # Note: this address is typically in the range of the "exchangePoke3ToGmCharKind" function!
 .alias LocalMemoryAddrLoc = 0x806948C8              # We return early from that function with this code, so the remaining memory there is safe to use!
-.alias MaxCharCount = 242
-.alias TableLengthInBytes = 968
+.alias MaxCharCount = 128                          # Must match the word[] table length above (128 entries)
+.alias TableLengthInBytes = 512                    # 128 * 4
 .RESET
 .macro lwd(<reg>, <addr>)
 {
