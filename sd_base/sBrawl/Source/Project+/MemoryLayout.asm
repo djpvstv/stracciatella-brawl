@@ -84,8 +84,8 @@ Sound Resource 12.76MB -> 12.76MB [DukeItOut, Exul Anima]
 .alias size = 0x28000    # Normally E6000
 .alias size_hi = size / 0x10000
 .alias size_lo = size & 0xFFFF
-op li r4, 0x880 @ $8007A0D8    # \ 0x66680 block -> 0x880
-op li r5, 0x880 @ $8007A0EC    # /
+#op li r4, 0x880 @ $8007A0D8    # \ 0x66680 block -> 0x880
+#op li r5, 0x880 @ $8007A0EC    # / Disabled: this block is sndHeap[7], the Pokemon Trainer soundbank heap (0x66666). Shrinking it makes the Trainer bank (01B) fail to load.
 CODE @ $8007326C
 {
     lis r31, size_hi
@@ -118,10 +118,11 @@ Finish:
 	li r3, 196				# Original operation. Allocation size.
 }
 
-#####################################################
-Sound Resource sndHeap[0] 2.91MB -> 4.41MB [MarioDox]
-#####################################################
+######################################################
+!Sound Resource sndHeap[0] 2.91MB -> 4.41MB [MarioDox]
+######################################################
 # Requires SoundResource increase above. Used for the expanded announcer.
+# Disabled: no expanded announcer here, and the Sound heap needs the space for the restored sndHeap[7] (Pokemon Trainer).
 op lis r29,0x43 	@ $80079f70
 op addi r4,r29,0x4cfa 	@ $80079f78
 op addi r5,r29,0x4cfa	@ $80079f98
